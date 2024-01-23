@@ -1,0 +1,137 @@
+
+// MIXIN DE DIFERENTES FLEX DIRECTIOS
+@mixin d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin d-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@mixin d-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin d-column-center-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+// CONTENEDORES DE DIV Y SECCION
+
+@mixin container {
+    width: 100vw;
+    max-width: 100vw;
+}
+
+@mixin div-width {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    @include padding50;
+    
+    // TABLET
+    @media screen and (max-width: 768px){ @include padding25; }
+    // MOBILE
+    @media screen and (max-width: 360px){ @include padding15; }
+}
+
+@mixin div-2col {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include padding50;
+    
+    // TABLET
+    @media screen and (max-width: 768px){ @include padding25; }
+    // MOBILE
+    @media screen and (max-width: 360px){ @include padding15; }
+}
+
+
+// padding
+
+@mixin padding5{padding: 5px;}
+@mixin padding10{padding: 10px;}
+@mixin padding15{padding: 15px;}
+@mixin padding20{padding: 20px;}
+@mixin padding25{padding: 25px;}
+@mixin padding50{padding: 50px;}
+
+@mixin vertical-padding5{padding: 5px 0px;}
+@mixin vertical-padding10{padding: 10px 0px;}
+@mixin vertical-padding15{padding: 15px 0px;}
+@mixin vertical-padding20{padding: 20px 0px;}
+@mixin vertical-padding25{padding: 25px 0px;}
+@mixin vertical-padding50{padding: 50px 0px;}
+
+// margin
+
+@mixin margin5{margin: 5px;}
+@mixin margin10{margin: 10px;}
+@mixin margin15{margin: 15px;}
+@mixin margin20{margin: 20px;}
+@mixin margin25{margin: 25px;}
+@mixin margin50{margin: 50px;}
+
+@mixin vertical-margin5{margin: 5px 0px;}
+@mixin vertical-margin10{margin: 10px 0px;}
+@mixin vertical-margin15{margin: 15px 0px;}
+@mixin vertical-margin20{margin: 20px 0px;}
+@mixin vertical-margin25{margin: 25px 0px;}
+@mixin vertical-margin50{margin: 50px 0px;}
+
+
+// ANIMATIONS
+@mixin animation-transition{
+    transition: all .3s ease;
+}
+@mixin animation-transition-fast{
+    transition: all .15s ease;
+}
+
+
+@mixin disable-selection{
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+@mixin disable-pointers-events{
+    pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+
+/*
+
+// TABLET
+@media screen and (max-width: 768px){
+    
+}
+
+// MOBILE
+@media screen and (max-width: 360px) {
+
+}
+
+*/

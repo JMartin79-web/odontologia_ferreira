@@ -1,0 +1,35 @@
+.hero-container{
+    @include container;
+    .hero{
+        @include div-width;
+        @include div-2col;
+        align-items: center;
+        min-height: 80vh;
+        padding-top: 80px;
+
+        .hero-img{
+            background-color: $secondary;
+            width: 100%;
+            max-width: 700px;
+            aspect-ratio: 1/1;
+        }
+    }
+}
+
+
+
+// TABLET
+@media screen and (max-width: 768px){
+.hero-container{
+
+    .hero{
+        @include d-column-reverse;
+        height: fit-content;
+    }
+}
+}
+
+// MOBILE
+@media screen and (max-width: 360px) {
+
+}

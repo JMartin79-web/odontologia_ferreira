@@ -1,0 +1,15 @@
+.testimonial-section-container{
+    @include container;
+
+    .testimonial-section{
+        @include div-width;
+
+        .testimonial-section-cards{
+            @include vertical-margin15;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

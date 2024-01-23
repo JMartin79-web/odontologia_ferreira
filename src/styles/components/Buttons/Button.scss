@@ -1,0 +1,123 @@
+
+.button-contenedor{
+    width: fit-content;
+    display: inline-flex;
+    @include disable-selection;
+}
+
+.primary-button{
+    @include d-flex-center;
+    cursor: pointer;
+    
+    font-size: 2rem;
+    font-weight: $semiBold;
+    
+    padding: 1rem 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+    color: $white;
+    border: .3rem solid $accent;
+    background-color: $accent;
+    @include animation-transition;
+
+    &:hover{
+        transform: translateY(-.5rem);
+        filter: drop-shadow($accent50 0px .5rem  .2rem);
+        @include animation-transition-fast;
+    }
+
+    &:focus{
+        animation: button-clicked;
+        animation-duration: 1s;
+        transform: translateY(0rem);
+        filter: drop-shadow(transparent 0px 0rem 0rem);
+    }
+
+    
+}
+
+.secondary-button{
+    @include d-flex-center;
+    cursor: pointer;
+    
+    font-size: 2rem;
+    font-weight: $regular;
+    
+    padding: 1rem 3rem;
+    margin: .5rem;
+    border-radius: 1rem;
+
+    color: $primary;
+    border: .3rem solid $secondary;
+    background-color: $secondary;
+    @include animation-transition;
+
+    &:hover{
+        transform: translateY(-.5rem);
+        filter: drop-shadow($secondary50 0px .5rem  .2rem);
+        @include animation-transition-fast;
+    }
+    &:focus{
+        animation: button-clicked;
+        animation-duration: 1s;
+        transform: translateY(0rem);
+        filter: drop-shadow(transparent 0px 0rem 0rem);
+    }
+}
+
+
+.social-button{
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1rem 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    border: .3rem solid $primary;
+    @include animation-transition;
+
+    .social-button-img{
+        aspect-ratio: 1/1;
+        margin-right:.5rem;
+        width: 2rem;
+        height: 2rem;
+        .svg-icon{
+            @include d-flex-center;
+            width: 2rem;
+            height: 2rem;
+            path{width: 1rem;}
+            fill: $primary;
+            @include animation-transition;
+        }
+    }
+
+    .social-button-txt{
+        p{
+            color: $primary;
+            font-weight: $semiBold;
+            @include animation-transition;
+        }
+    }
+
+    &:hover{
+        @include animation-transition-fast;
+        border: .3rem solid $accent;
+        .social-button-img{
+            .svg-icon{
+                @include animation-transition-fast;
+                fill: $accent;
+            }
+        }
+        .social-button-txt{
+            p{
+                color: $accent;
+                font-weight: $semiBold;
+                @include animation-transition-fast;
+            }
+        }
+    }
+
+}

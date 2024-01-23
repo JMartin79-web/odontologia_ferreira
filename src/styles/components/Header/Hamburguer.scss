@@ -1,0 +1,80 @@
+.hamburger-container{
+    @include disable-selection;
+    cursor: pointer;
+    z-index: 100;
+    
+    .hamburger-btn{
+        height: 40px;
+        width: 50px;
+        overflow: visible!important;
+        @include d-column-center;
+        
+        &:hover{
+            span{
+                background-color: $accent;
+                @include animation-transition;
+            }
+        }
+        span{
+            width: 40px;
+            height: 5px;
+            background-color: $black;
+            @include disable-selection;
+            
+        }
+        :nth-child(1){
+            z-index: 101;
+            position: relative;
+
+        }
+        :nth-child(2){
+            z-index: 102;
+            position: relative;
+            margin: 7px 0px;
+        }
+        :nth-child(3){
+            position: relative;
+            z-index: 103;
+
+        }
+    }
+
+    .hamburger-btn-clicked{
+        height: 40px;
+        width: 50px;
+        @include d-column-center;
+        
+        span{
+            width: 40px;
+            height: 5px;
+        }
+        
+        &:hover{
+            span{
+                background-color: $accent;
+                @include animation-transition;
+
+            }
+        }
+
+        :nth-child(1){
+            background-color: $black;
+            rotate: 45deg;
+            z-index: 101;
+            position: absolute;
+            @include animation-transition;
+        }
+        :nth-child(2){
+            height: 0;
+            background-color: $white;
+            @include animation-transition;
+        }
+        :nth-child(3){
+            background-color: $black;
+            rotate: -45deg;
+            position: absolute;
+            z-index: 103;
+            @include animation-transition;
+        }
+    }
+}

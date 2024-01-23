@@ -1,0 +1,55 @@
+.card-testimonial{
+    @include margin15;
+    @include d-column-center;
+    width: 100%;
+    max-width: 300px;
+    padding: 2.1rem;
+    border-radius: 2rem;
+    
+    background-color: $white;
+
+    @include animation-transition;
+
+    &:hover{
+        transform: translateY(-1rem);
+        filter: drop-shadow($primary50 0px 1.5rem  1rem);
+        @include animation-transition-fast;
+
+        .card-img{
+            @include animation-transition-fast;
+            border: solid .2rem $accent;
+            .card-img-img{
+                transform: scale(1.1);
+                @include animation-transition-fast;
+            }
+        }
+    }
+    
+    .card-img{
+        @include animation-transition;
+        @include vertical-margin15;
+        @include d-flex-center;
+        background-color: $tertiary;
+        aspect-ratio: 1/1;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 15rem;
+        border: solid .2rem $secondary;
+        object-fit: cover;
+        overflow: hidden;
+        .card-img-img{
+            @include animation-transition;
+        }
+    }
+
+    .card-txt{
+        h6{
+            color: $primary;
+            text-align: center;
+        }
+        
+        p{
+            text-align: center;
+        }
+    }
+}

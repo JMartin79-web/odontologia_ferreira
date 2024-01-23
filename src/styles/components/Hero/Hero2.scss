@@ -1,0 +1,49 @@
+.hero2-container{
+    @include container;
+    .hero2{
+        @include div-width;
+        @include d-column-center;
+        min-height: 80vh;
+        padding-top: 80px;
+        .hero-txt{
+            @include d-column-center;
+            @include div-width;
+            text-align: center;
+            .hero-txt-buttons{
+                @include d-flex-center;
+            }
+        }
+
+    }
+}
+
+
+
+// TABLET
+@media screen and (max-width: 768px){
+    .hero2-container{
+        @include container;
+        .hero2{
+            padding-top: 80px;
+            .hero-txt{padding: 0;}
+    
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 500px) {
+    .hero2-container{
+        .hero2{
+            min-height: 60vh;
+            height: min-content;
+            .hero-txt{
+                .hero-txt-buttons{
+                    @include d-column-center;
+                    align-items: stretch;
+                }
+            }
+    
+        }
+    }
+}

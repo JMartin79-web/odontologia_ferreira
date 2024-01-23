@@ -1,0 +1,47 @@
+.section2-container{
+    @include container;
+
+    .section2{
+        @include div-width;
+        @include div-2col;
+        align-items: center;
+        .section2-txt{
+            @include padding10;
+        }
+        
+        .section2-img{
+            max-width: 750px;
+            @include padding10;
+            @include d-flex-center;
+            aspect-ratio: 1/1;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+// TABLET
+@media screen and (max-width: 1000px){
+    .section2-container{
+        .section2{
+            @include d-column;
+            .section2-txt{
+                @include padding10;
+            }
+            .section2-img{
+                @include padding10;
+            }
+    
+        }
+    }
+    
+}
+    
+// MOBILE
+@media screen and (max-width: 360px) {
+    
+    
+}

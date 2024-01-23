@@ -1,0 +1,17 @@
+
+@keyframes button-clicked{
+    0%{
+        transform: translateY(-.5rem);
+    }
+    25%{
+        transform: scale(.95);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+        transform: translateY(0rem);
+        filter: drop-shadow(transparent 0px 0rem 0rem);
+    }
+}

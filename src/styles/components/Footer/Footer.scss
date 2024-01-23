@@ -1,0 +1,51 @@
+.footer-container{
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    background-color: $secondaryStrong;
+    .footer{
+        @include div-width;
+        @include padding50;
+        div{@include margin15;}
+        .footer-greeting{
+            h5{color: $colorBg; text-align: center;}
+            p{color: $colorBg;text-align: center; @include vertical-margin5;}
+        }
+        .footer-credentials{
+            @include d-flex-center;
+            
+            p{
+                font-weight: $medium;
+                color: $white;
+            }
+            a{
+                font-weight: $medium;
+                color: $white;
+                @include animation-transition;
+                &:hover{                
+                    color: $accent;
+                    @include animation-transition-fast;
+
+                }
+            }
+        }
+
+    }
+}
+
+// TABLET
+@media screen and (max-width: 768px){
+.footer-container{
+    .footer{@include padding25;}
+}  
+
+}
+
+    
+// MOBILE
+@media screen and (max-width: 360px) {
+.footer-container{
+    .footer{@include padding15;}
+}  
+
+}

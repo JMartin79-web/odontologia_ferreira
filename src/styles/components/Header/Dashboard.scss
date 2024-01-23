@@ -1,0 +1,155 @@
+.dashboard-container{
+    z-index: 8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    padding: 90px 10px 30px ;
+    margin-top: 80px;
+    @include animation-transition-fast;
+    background-color: $white;
+    .dashboard{
+        position: relative;
+        border-radius: .5rem;
+        height: 100%;
+        overflow: hidden;
+
+        .dashboard-back{
+            position: absolute;
+            z-index: 10;
+            height: 150%;
+            width: 150%;
+            margin: -15px;
+        }
+
+        .dashboard-content{
+            @include padding10;
+            border-radius: .5rem;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 11;
+            .dashboard-divisor{
+                width: 100%;
+                height: .15rem;
+                border-radius: 1rem;
+                background-color: $secondary;
+                @include vertical-margin10;
+            }
+            
+            .dashboard-links{
+                @include vertical-padding10;
+                display: flex;
+                flex-direction: column;
+                .link{
+                    @include disable-selection;
+                    @include vertical-margin5;
+                    @include padding5;
+                    @include heading6;
+                    font-weight: $semiBold;
+                }
+            }
+            
+            .dashboard-icons{
+                @include vertical-padding10;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+    
+            }
+        }
+
+    }
+}
+
+
+// CUANDO SE CIERRA
+.dashboard-container-close{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    width: 50vw;
+    height: 100vh;
+    padding: 90px 10px 30px ;
+    margin-top: 80px;
+
+    @include animation-transition;
+    @include disable-selection;
+    
+    .dashboard{
+        border-radius: .5rem;
+        @include padding10;
+        @include disable-selection;
+        height: 100%;
+        
+        .dashboard-divisor{
+            width: 100%;
+            height: .15rem;
+            border-radius: 1rem;
+            background-color: $secondary;
+            @include vertical-margin10;
+        }
+        
+        .dashboard-links{
+            @include vertical-padding10;
+            display: flex;
+            flex-direction: column;
+            .link{
+                @include vertical-margin5;
+                @include padding5;
+                @include heading6;
+                font-weight: $semiBold;
+            }
+        }
+        
+        .dashboard-icons{
+            @include vertical-padding10;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+    }
+}
+
+
+// HEADER ICON
+.header-icon-link{
+    cursor: pointer;
+    display: inline-block;
+    @include disable-selection;
+    .header-icon{
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+        @include margin5;
+        @include d-flex-center;
+        @include animation-transition;
+        svg{
+            width: 2.7rem;
+            height: 2.7rem;
+            fill: $primary;
+            @include animation-transition;
+        }
+        
+    }
+
+    &:hover{
+        
+        .header-icon-facebook{
+            @include animation-transition-fast;
+            svg{fill: $accent; @include animation-transition-fast;}
+        }
+
+        .header-icon-instagram{
+            @include animation-transition-fast;
+            svg{fill: $accent; @include animation-transition-fast;}
+        }
+
+    }
+}

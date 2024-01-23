@@ -1,0 +1,105 @@
+.carrousel-container{
+    @include d-flex-center;
+    padding: 0;
+    .carrousel-arrow{
+        @include disable-selection;
+        @include d-flex-center;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        svg{
+            @include d-flex-center;
+            width: 4rem; 
+            fill: $primary;
+            @include animation-transition;
+        }
+        &:hover{
+            svg{
+                fill: $accent;
+                @include animation-transition-fast;
+            }
+        }
+
+        .carrousel-arrow-back{
+            rotate: 180deg;
+        }
+    }
+
+    .carrousel{
+        @include disable-selection;
+        padding: 0;
+        width: 100%;
+        max-width: 700px;
+
+        // SE AJUSTA SEGUN CANTIDAD DE IMAGENES EN EL ARRAY
+        // SEGUN EL LENGTH CAMBIAR EL MOVIMIENTO
+        .carrousel-length-2{
+            width: 200%;
+            .carrousel-position-1{transform: translateX(0);}
+            .carrousel-position-2{transform: translateX(-50);}
+        }
+        .carrousel-length-3{
+            width: 300%;
+            .carrousel-position-1{transform: translateX(0);}
+            .carrousel-position-2{transform: translateX(-33.3);}
+            .carrousel-position-3{transform: translateX(-66.6);}
+        }
+        .carrousel-length-4{
+            width: 400%;
+            .carrousel-position-1{transform: translateX(0);}
+            .carrousel-position-2{transform: translateX(-25%);}
+            .carrousel-position-3{transform: translateX(-50%);}
+            .carrousel-position-4{transform: translateX(-75%);}
+        }
+        .carrousel-length-5{
+            width: 500%;
+            .carrousel-position-1{transform: translateX(0);}
+            .carrousel-position-2{transform: translateX(-20%);}
+            .carrousel-position-3{transform: translateX(-40%);}
+            .carrousel-position-4{transform: translateX(-60%);}
+            .carrousel-position-5{transform: translateX(-80%);}
+        }
+        .carrousel-length-6{
+            width: 600%;
+            .carrousel-position-1{transform: translateX(0);}
+            .carrousel-position-2{transform: translateX();}
+            .carrousel-position-3{transform: translateX();}
+            .carrousel-position-4{transform: translateX();}
+            .carrousel-position-5{transform: translateX();}
+            .carrousel-position-6{transform: translateX();}
+        }
+        .carrousel-length-7{
+            width: 700%;
+            .carrousel-position-1{transform: translateX(0);}
+            .carrousel-position-2{transform: translateX();}
+            .carrousel-position-3{transform: translateX();}
+            .carrousel-position-4{transform: translateX();}
+            .carrousel-position-5{transform: translateX();}
+            .carrousel-position-6{transform: translateX();}
+            .carrousel-position-7{transform: translateX();}
+        }
+
+
+        .carrousel-imgs{
+
+            .carrousel-content{
+                display: inline-flex;
+
+                .carrousel-imgs-div{
+                    aspect-ratio: 1/1;
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 2rem;
+                    .carrousel-imgs-div-img{
+                        overflow: hidden;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
