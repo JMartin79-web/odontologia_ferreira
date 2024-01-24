@@ -8,10 +8,11 @@ return (
 
     <section className='section2'>
         <div className='section2-txt'>
-            <h3>Section 2</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <h3>Sobre nosotros</h3>
+            <br />
+            <p>Hemos logrado crecer juntos, capacitándonos, aprendiendo, acompañando, enseñando y educando a todos nuestros pacientes a alcanzar su mejor sonrisa y salud bucal que tanto merecen, hemos compartido muchos momentos y queremos mas. 
             <br /> <br />
-            numquam sequi reprehenderit consectetur eos iste possimus aperiam amet, veniam vitae obcaecati commodi ab eaque totam expedita non velit minus fugiat!
+            Somos un gran grupo de trabajo que está siempre atento a todas las necesidades de nuestros pacientes.
             </p>
         </div>
 

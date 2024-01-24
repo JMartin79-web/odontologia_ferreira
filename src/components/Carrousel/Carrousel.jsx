@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import CarrouselImg from './CarrouselImg'
 
 // IMGS
-import img1 from '../../assets/img/img1.jpg'
-import img2 from '../../assets/img/img2.jpg'
+import img1 from '../../assets/img/carrousel/img1.jpg'
+import img2 from '../../assets/img/carrousel/img2.jpg'
 import img3 from '../../assets/img/img3.jpg'
 import img4 from '../../assets/img/img4.jpg'
 
@@ -16,8 +16,6 @@ function Carrousel(props) {
   let sliderImgsArray = [
     {id: 1, key:"1", name:'img1', src:img1 },
     {id: 2, key:"2", name:'img2', src:img2 },
-    {id: 3, key:"3", name:'img3', src:img3 },
-    {id: 4, key:"4", name:'img4', src:img4 },
 
   ]
 

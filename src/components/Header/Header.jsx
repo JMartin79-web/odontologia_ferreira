@@ -11,6 +11,7 @@ function Header() {
   const [toggle, setToggle] = useState(false)
   function handleToggle () { setToggle(!toggle) }
 
+
 return (
 <>
   <div className="header-container">
@@ -19,12 +20,12 @@ return (
 
       <div className='header-logo'>
         <img src='#' alt="logo" />
-        <HashLink smooth to='/#inicio' >L O G O</HashLink>
+        <HashLink smooth to='/#inicio' >Dr. Juan E. Ferreira</HashLink>
       </div>
       
       <div className='header-links'>
-        <HashLink className='link' smooth to='/#' >Link</HashLink>
-        <HashLink className='link' smooth to='/#' >Link</HashLink>
+        <HashLink className='link' smooth to='/#nosotros' >Nosotros</HashLink>
+        <HashLink className='link' smooth to='/#contacto' >Contacto</HashLink>
       </div>
     
       <div className='header-hamburger'>

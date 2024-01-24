@@ -1,0 +1,101 @@
+.hero3-container{
+    @include container;
+    overflow: hidden;
+    .hero-container{
+        z-index: 2;
+        position: absolute;
+        @include container;
+        @include d-flex-center;
+        padding-top: 80px;
+        
+        .hero{
+            @include div-width;
+            @include d-column-center;
+            align-items: flex-start;
+            @include disable-selection;
+            .hero-txt{
+                max-width: 700px;
+                h1{color: $white; }
+                p{
+                    color: $white;
+                    @include bigText;
+                    @include vertical-margin15;
+                }
+                .hero-txt-buttons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+            }
+            }
+        }
+    }
+
+    .hero-bg{
+        z-index: 1;
+        position: relative;
+        @include container;
+        @include d-flex-center;
+        overflow: hidden;
+        
+        img{
+            overflow: hidden;
+            width: 100%;
+            min-height: 80vh;
+            object-fit: cover;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+   
+}
+
+
+// TABLET
+@media screen and (max-width: 768px){
+    .hero3-container{
+
+        .hero-container{
+            .hero{
+                @include d-column-reverse;
+                justify-content: flex-start;
+            }
+        }
+    
+        .hero-bg{
+            max-width: 150vw;
+            width: 150vw;
+            margin-left: -45vw;
+            overflow: hidden;
+
+            img{
+                overflow: hidden;
+                min-height: 90vh;
+            }
+        }
+    }    
+}
+
+// MOBILE
+@media screen and (max-width: 450px) {
+.hero3-container{
+
+    .hero-container{
+        .hero{
+            .hero-txt{
+                .hero-txt-buttons{
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+
+    .hero-bg{
+        margin-left: -50vw;
+        img{ min-height: 90vh; }
+        }
+}   
+}

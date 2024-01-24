@@ -6,12 +6,13 @@ import Hero2 from './Hero/Hero2'
 import Carrousel from './Carrousel/Carrousel'
 import Contact from './Contact/Contact'
 import TestimonialSection from './Sections/TestimonialSection'
+import Hero3 from './Hero/Hero3'
 
 
 function Home() {
 return (
 <>
-    <Hero/>
+    <Hero3/>
 
     <Section2/>
 

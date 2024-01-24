@@ -42,20 +42,20 @@
     cursor: pointer;
     
     font-size: 2rem;
-    font-weight: $regular;
+    font-weight: $semiBold;
     
     padding: 1rem 3rem;
     margin: .5rem;
     border-radius: 1rem;
 
-    color: $primary;
-    border: .3rem solid $secondary;
-    background-color: $secondary;
+    color: $white;
+    border: .3rem solid $colorTxt;
+    background-color: $colorTxt;
     @include animation-transition;
 
     &:hover{
         transform: translateY(-.5rem);
-        filter: drop-shadow($secondary50 0px .5rem  .2rem);
+        filter: drop-shadow($tertiary 0px .5rem  .2rem);
         @include animation-transition-fast;
     }
     &:focus{
@@ -104,16 +104,16 @@
 
     &:hover{
         @include animation-transition-fast;
-        border: .3rem solid $accent;
+        border: .3rem solid $secondaryStrong;
         .social-button-img{
             .svg-icon{
                 @include animation-transition-fast;
-                fill: $accent;
+                fill: $secondaryStrong;
             }
         }
         .social-button-txt{
             p{
-                color: $accent;
+                color: $secondaryStrong;
                 font-weight: $semiBold;
                 @include animation-transition-fast;
             }
