@@ -1,6 +1,7 @@
 import React from 'react'
 import Carrousel from '../Carrousel/Carrousel'
-
+import SocialButton from '../Buttons/SocialButton'
+import IconInstagram from '../Icons/IconInstagram'
 function Section2() {
 return (
 
@@ -14,6 +15,8 @@ return (
             <br /> <br />
             Somos un gran grupo de trabajo que está siempre atento a todas las necesidades de nuestros pacientes.
             </p>
+            <br />
+            <SocialButton img={<IconInstagram/>} txt='Encontranos en Instragram' />
         </div>
 
         <div className='section2-img'>

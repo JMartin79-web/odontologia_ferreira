@@ -7,6 +7,7 @@
 
 .primary-button{
     @include d-flex-center;
+    @include disable-selection;
     cursor: pointer;
     
     font-size: 2rem;
@@ -39,6 +40,7 @@
 
 .secondary-button{
     @include d-flex-center;
+    @include disable-selection;
     cursor: pointer;
     
     font-size: 2rem;
@@ -118,6 +120,40 @@
                 @include animation-transition-fast;
             }
         }
+    }
+
+}
+
+
+.contact-button{
+    @include disable-selection;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    
+    font-size: 1.6rem;
+    font-weight: $semiBold;
+    
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    border-radius: 1rem;
+
+    background-color: $primary;
+    color: $white;
+
+    @include animation-transition;
+
+    &:hover{
+        transform: translateY(-.5rem);
+        filter: drop-shadow($secondary 0px .5rem  .2rem);
+        @include animation-transition-fast;
+    }
+    &:focus{
+        animation: button-clicked;
+        animation-duration: 1s;
+        transform: translateY(0rem);
+        filter: drop-shadow(transparent 0px 0rem 0rem);
     }
 
 }

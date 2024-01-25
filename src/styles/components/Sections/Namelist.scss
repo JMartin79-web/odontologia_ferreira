@@ -1,0 +1,12 @@
+.namelist-container{
+    @include container;
+    background-color: $primary;
+
+    .namelist{    
+        @include d-column-center;
+        padding: 15px 0px;
+        h4{color: $white;}
+    }
+
+
+}

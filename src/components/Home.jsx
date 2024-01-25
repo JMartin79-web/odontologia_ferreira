@@ -5,8 +5,10 @@ import Section2 from './Sections/Section2'
 import Hero2 from './Hero/Hero2'
 import Carrousel from './Carrousel/Carrousel'
 import Contact from './Contact/Contact'
+import Contact2 from './Contact/Contact2'
 import TestimonialSection from './Sections/TestimonialSection'
 import Hero3 from './Hero/Hero3'
+import NameList from './Sections/NameList'
 
 
 function Home() {
@@ -18,9 +20,11 @@ return (
 
     <About/>
 
-    <Contact/>
+    <NameList/>
 
     <TestimonialSection/>
+
+    <Contact2/>
 
 </>
 )

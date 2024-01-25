@@ -19,8 +19,8 @@ return (
                 <p>Agendá tu cita hoy y dejanos ser la razón detrás de tu confianza y bienestar dental.</p>
                         
                 <div className='hero-txt-buttons'>
-                    <HashLink smooth to={'/#'} className='secondary-button'>Saber más</HashLink>
-                    <HashLink smooth to={'/#'} className='primary-button'>Solicitar turno</HashLink>
+                    <HashLink smooth to={'/#nosotros'} className='secondary-button'>Saber más</HashLink>
+                    <HashLink smooth to={'/#contacto'} className='primary-button'>Solicitar turno</HashLink>
                 </div>
                     
             </section>

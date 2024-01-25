@@ -1,0 +1,20 @@
+.card-contact{
+    @include margin15;
+    background-color: $white;
+    padding: 2.1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card-contact-img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        @include d-flex-center;
+        .iframe{
+            border: none;
+            border-radius: 1rem;
+            width: 95%;
+            aspect-ratio: 1/1;
+        }
+    }
+}

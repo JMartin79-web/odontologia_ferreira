@@ -1,0 +1,31 @@
+.contact-2-container{
+    @include container;
+    background-color: $grey;
+    .contact-2{
+        @include div-width;
+        .contact-2-cards{
+            @include div-2col;
+            padding: 0;
+        }
+    }
+}
+
+
+// TABLET
+@media screen and (max-width: 700px){
+.contact-2-container{
+
+    .contact-2{
+        @include div-width;
+        .contact-2-cards{
+            @include d-column;
+            padding: 0;
+        }
+    }
+}  
+}
+
+// MOBILE
+@media screen and (max-width: 360px) {
+
+}
