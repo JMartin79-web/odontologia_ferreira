@@ -1,13 +1,15 @@
 .card-testimonial{
     @include margin15;
     @include d-column-center;
+    justify-content: flex-start;
     width: 100%;
     max-width: 300px;
+    height: 100%;
+    max-height: 400px;
+    aspect-ratio: 3/3.1;
     padding: 2.1rem;
     border-radius: 2rem;
-    
     background-color: $white;
-
     @include animation-transition;
 
     &:hover{
@@ -17,7 +19,7 @@
 
         .card-img{
             @include animation-transition-fast;
-            border: solid .2rem $accent;
+            border: solid .2rem $primary;
             .card-img-img{
                 transform: scale(1.1);
                 @include animation-transition-fast;
@@ -31,9 +33,9 @@
         @include d-flex-center;
         background-color: $tertiary;
         aspect-ratio: 1/1;
-        width: 15rem;
-        height: 15rem;
-        border-radius: 15rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10rem;
         border: solid .2rem $secondary;
         object-fit: cover;
         overflow: hidden;
@@ -44,7 +46,7 @@
 
     .card-txt{
         h6{
-            color: $primary;
+            color: $colorH;
             text-align: center;
         }
         

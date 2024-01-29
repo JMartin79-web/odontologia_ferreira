@@ -2,7 +2,7 @@
     width: 100vw;
     position: relative;
     bottom: 0;
-    background-color: $secondaryStrong;
+    background-color: $darkGrey;
     .footer{
         @include div-width;
         @include padding50;
@@ -16,14 +16,14 @@
             
             p{
                 font-weight: $medium;
-                color: $white;
+                color: $white50;
             }
             a{
                 font-weight: $medium;
-                color: $white;
+                color: $white50;
                 @include animation-transition;
                 &:hover{                
-                    color: $accent;
+                    color: $white;
                     @include animation-transition-fast;
 
                 }

@@ -1,12 +1,65 @@
 .namelist-container{
     @include container;
+    @include disable-selection;
     background-color: $primary;
 
     .namelist{    
         @include d-column-center;
         padding: 15px 0px;
-        h4{color: $white;}
+        h4{color: $white; text-align: center;}
+        .namelist-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        
+            .item{
+                @include margin10;
+                @include d-flex-center;
+                aspect-ratio: 1/1;
+                width: 1fr;
+                max-width: 15rem;
+                object-fit: contain;
+                img{
+                    filter: opacity(75%);
+                    @include animation-transition;
+
+                }
+
+                &:hover{
+                    img{
+                        filter: opacity(100%);
+                        @include animation-transition-fast;
+
+                    }
+                }
+            }
+        }
     }
 
 
+}
+
+
+// TABLET
+@media screen and (max-width: 768px){
+    .namelist-container{
+        .namelist{    
+            .namelist-list{
+                .item{
+                    @include margin5;
+                    max-width: 10rem;
+                }
+            }
+        }
+    
+    
+    }
+}
+    
+// MOBILE
+@media screen and (max-width: 360px) {
+    
+    
 }

@@ -9,6 +9,7 @@ import Contact2 from './Contact/Contact2'
 import TestimonialSection from './Sections/TestimonialSection'
 import Hero3 from './Hero/Hero3'
 import NameList from './Sections/NameList'
+import Section3 from './Sections/Section3'
 
 
 function Home() {
@@ -23,8 +24,10 @@ return (
     <NameList/>
 
     <TestimonialSection/>
-
+    
     <Contact2/>
+
+    <Section3/>
 
 </>
 )

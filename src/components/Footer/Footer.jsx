@@ -8,8 +8,8 @@ return (
 
     <div className='footer'>
         <div className='footer-greeting'>
-            <h5>¡Title h5!</h5>
-            <p>Nombre de la empresa</p>
+            <h5>¡Esperamos tu visita!</h5>
+            <p>Clínica Dental Dr. Juan E. Ferreira</p>
         </div>
         
         <Divisor color='#ffffff5d'/> 

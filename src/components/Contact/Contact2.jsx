@@ -10,15 +10,15 @@ return (
 <div className='contact-2-container' id='contacto'>
 
     <div className='contact-2'>
-        <h4>Contact 2</h4>
-    
+        <h4>Nuestras sedes</h4>
+        <br />
         <div className='contact-2-cards'>
             
             <CardContact
                 title='Malvinas Argentinas'
                 txt1='Av. Pte Perón 395, Villa de Mayo'
                 txt2='Lunes a viernes de 09:00 a 12:00'
-                phone='Llamá al 4463-6480 o contactate por Whatsapp'
+                phone='Llamá al 4463-6480 o contactanos por Whatsapp'
                 iframe={MALVINAS} 
                 
                 button1="https://api.whatsapp.com/send/?phone=5491134334346&text&app_absent=0"
@@ -30,7 +30,7 @@ return (
                 title='CABA'
                 txt1='Montevideo 955 7D, CABA'
                 txt2='Lunes, miércoles y viernes de 09:00 a 12:00'
-                phone='Llamá al 4311-7684 o contactate por Whatsapp'
+                phone='Llamá al 4311-7684 o contactanos por Whatsapp'
                 iframe={CABA}
 
                 button1="https://api.whatsapp.com/send/?phone=5491134334346&text&app_absent=0"

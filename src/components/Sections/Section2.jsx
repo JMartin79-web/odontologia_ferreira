@@ -16,7 +16,7 @@ return (
             Somos un gran grupo de trabajo que está siempre atento a todas las necesidades de nuestros pacientes.
             </p>
             <br />
-            <SocialButton img={<IconInstagram/>} txt='Encontranos en Instragram' />
+            <SocialButton href='https://www.instagram.com/odontologia_ferreira/' img={<IconInstagram/>} txt='Encontranos en Instragram' />
         </div>
 
         <div className='section2-img'>
